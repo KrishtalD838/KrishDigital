@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  krishdigital:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: krishdigital-website
+    restart: unless-stopped
+    ports:
+      - "3003:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - krishdigital-network
+
+networks:
+  krishdigital-network:
+    driver: bridge
