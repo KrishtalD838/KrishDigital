@@ -10,7 +10,7 @@ export default function Logo() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect x="2" y="2" width="32" height="32" rx="8" fill="#4f46e5" />
+        <rect x="2" y="2" width="32" height="32" rx="8" fill="#2563eb" />
         <path
           d="M12 11V25M12 18L21 11M12 18L21 25"
           stroke="white"
