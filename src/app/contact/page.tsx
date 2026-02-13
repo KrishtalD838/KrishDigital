@@ -11,8 +11,6 @@ const contactInfo = [
     value: 'info@krishdigital.eu',
     href: 'mailto:info@krishdigital.eu',
     description: 'Send us an email and we\'ll respond within 24 hours.',
-    bgColor: 'bg-brand-50',
-    textColor: 'text-brand-600',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -24,8 +22,6 @@ const contactInfo = [
     value: 'London, United Kingdom',
     href: null,
     description: 'Our team operates from London.',
-    bgColor: 'bg-accent-50',
-    textColor: 'text-accent-500',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -38,8 +34,6 @@ const contactInfo = [
     value: 'Mon — Fri, 9:00 — 18:00',
     href: null,
     description: 'Business hours, GMT timezone.',
-    bgColor: 'bg-warm-50',
-    textColor: 'text-warm-500',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -52,11 +46,11 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-hero">
+      <section className="bg-brand-50/40">
         <div className="max-w-5xl mx-auto px-6 pt-28 pb-16 md:pt-40 md:pb-20">
           <p className="text-brand-600 font-medium text-sm mb-4">Contact Us</p>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-5 max-w-2xl">
-            Let&apos;s <span className="gradient-text">Connect</span>
+            Let&apos;s Connect
           </h1>
           <p className="text-lg text-slate-500 leading-relaxed max-w-2xl">
             Have a project in mind? We&apos;d love to hear from you.
@@ -69,8 +63,8 @@ export default function Contact() {
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {contactInfo.map((info) => (
-            <div key={info.title} className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-md hover:border-brand-100 transition-all">
-              <div className={`w-10 h-10 ${info.bgColor} rounded-lg flex items-center justify-center ${info.textColor} mx-auto mb-4`}>
+            <div key={info.title} className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm hover:border-brand-200 transition-all">
+              <div className="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 mx-auto mb-4">
                 {info.icon}
               </div>
               <h3 className="text-slate-900 font-semibold mb-1">{info.title}</h3>
@@ -88,7 +82,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="gradient-hero border-t border-gray-100">
+      <section className="bg-brand-50/40 border-t border-gray-100">
         <div className="max-w-2xl mx-auto px-6 py-20 md:py-28">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Send Us a Message</h2>
           <p className="text-slate-500 mb-10">
@@ -151,7 +145,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="inline-flex items-center gap-2 gradient-btn text-white font-medium text-sm px-5 py-2.5 rounded-lg transition-all shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40"
+              className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-5 py-2.5 rounded-lg transition-colors"
             >
               Send Message
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -165,7 +159,7 @@ export default function Contact() {
       {/* Location */}
       <section className="border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <p className="gradient-text font-medium text-sm mb-2">Our Location</p>
+          <p className="text-brand-600 font-medium text-sm mb-2">Our Location</p>
           <h3 className="text-slate-900 text-lg font-semibold mb-1">London, United Kingdom</h3>
           <p className="text-slate-400 text-sm">KrishDigital Solutions Limited</p>
         </div>

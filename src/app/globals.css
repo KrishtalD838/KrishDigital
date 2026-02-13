@@ -16,29 +16,6 @@ body {
 }
 
 ::selection {
-  background: #f3e8ff;
-  color: #7e22ce;
-}
-
-.gradient-hero {
-  background: linear-gradient(135deg, #faf5ff 0%, #fff1f2 50%, #fff7ed 100%);
-}
-
-.gradient-btn {
-  background: linear-gradient(135deg, #9333ea 0%, #e11d48 100%);
-}
-
-.gradient-btn:hover {
-  background: linear-gradient(135deg, #7e22ce 0%, #be123c 100%);
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #9333ea 0%, #f43f5e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-card {
-  background: linear-gradient(135deg, #faf5ff 0%, #fff1f2 100%);
+  background: #e0e7ff;
+  color: #4338ca;
 }
