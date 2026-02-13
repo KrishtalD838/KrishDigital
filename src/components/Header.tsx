@@ -29,7 +29,7 @@ export default function Header() {
               className={`text-sm transition-colors ${
                 pathname === item.href
                   ? 'text-brand-600 font-medium'
-                  : 'text-slate-500 hover:text-slate-900'
+                  : 'text-slate-500 hover:text-brand-600'
               }`}
             >
               {item.name}
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-slate-600 hover:text-slate-900 p-2 -mr-2"
+          className="md:hidden text-slate-600 hover:text-brand-600 p-2 -mr-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -72,7 +72,7 @@ export default function Header() {
                 className={`py-2 text-sm ${
                   pathname === item.href
                     ? 'text-brand-600 font-medium'
-                    : 'text-slate-500 hover:text-slate-900'
+                    : 'text-slate-500 hover:text-brand-600'
                 }`}
               >
                 {item.name}

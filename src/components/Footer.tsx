@@ -18,9 +18,9 @@ export default function Footer() {
           <div>
             <h4 className="text-slate-900 font-medium text-sm mb-4">Links</h4>
             <ul className="space-y-2.5">
-              <li><Link href="/" className="text-slate-500 hover:text-slate-800 text-sm transition-colors">Home</Link></li>
-              <li><Link href="/about" className="text-slate-500 hover:text-slate-800 text-sm transition-colors">About</Link></li>
-              <li><Link href="/contact" className="text-slate-500 hover:text-slate-800 text-sm transition-colors">Contact</Link></li>
+              <li><Link href="/" className="text-slate-500 hover:text-brand-600 text-sm transition-colors">Home</Link></li>
+              <li><Link href="/about" className="text-slate-500 hover:text-brand-600 text-sm transition-colors">About</Link></li>
+              <li><Link href="/contact" className="text-slate-500 hover:text-brand-600 text-sm transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="text-slate-900 font-medium text-sm mb-4">Contact</h4>
             <ul className="space-y-2.5 text-sm text-slate-500">
               <li>
-                <a href="mailto:info@krishdigital.eu" className="hover:text-slate-800 transition-colors">
+                <a href="mailto:info@krishdigital.eu" className="hover:text-brand-600 transition-colors">
                   info@krishdigital.eu
                 </a>
               </li>
@@ -43,8 +43,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} KrishDigital Solutions Limited. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="#" className="text-slate-400 hover:text-slate-600 text-xs transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-slate-400 hover:text-slate-600 text-xs transition-colors">Terms of Service</Link>
+            <Link href="#" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Privacy Policy</Link>
+            <Link href="#" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
