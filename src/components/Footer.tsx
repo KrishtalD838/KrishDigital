@@ -33,7 +33,7 @@ export default function Footer() {
                   info@krishdigital.eu
                 </a>
               </li>
-              <li>London, United Kingdom</li>
+              <li>Hong Kong, China</li>
             </ul>
           </div>
         </div>

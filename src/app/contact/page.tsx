@@ -19,9 +19,9 @@ const contactInfo = [
   },
   {
     title: 'Location',
-    value: 'London, United Kingdom',
+    value: 'Hong Kong, China',
     href: null,
-    description: 'Our team operates from London.',
+    description: 'Our team operates from Hong Kong.',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -160,7 +160,7 @@ export default function Contact() {
       <section className="border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
           <p className="text-brand-600 font-medium text-sm mb-2">Our Location</p>
-          <h3 className="text-slate-900 text-lg font-semibold mb-1">London, United Kingdom</h3>
+          <h3 className="text-slate-900 text-lg font-semibold mb-1">Hong Kong, China</h3>
           <p className="text-slate-400 text-sm">KrishDigital Solutions Limited</p>
         </div>
       </section>
