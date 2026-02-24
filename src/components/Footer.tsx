@@ -43,8 +43,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} KrishDigital Solutions Limited. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="#" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="text-slate-400 hover:text-brand-600 text-xs transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
